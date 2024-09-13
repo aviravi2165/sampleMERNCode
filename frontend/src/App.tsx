@@ -19,6 +19,7 @@ const App: React.FC = () => {
         <MessageBox message={message} type="info" onClose={handleClose} />
       )}
       <button onClick={() => fetchMessage()}>Show Message</button>
+      <h1>****</h1>
     </div>
   );
 };
