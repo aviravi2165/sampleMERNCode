@@ -9,10 +9,10 @@ const mapperDataToResponse = (msg: string): BasicMessageType => {
 
 export const welcomeService = (): BasicMessageType => {
   try {
-    const msg: BasicMessageType = mapperDataToResponse(welcomeData());
+    const dataFromDataLayer: string = welcomeData();
+    const msg: BasicMessageType = mapperDataToResponse(dataFromDataLayer);
     return msg;
-  } catch (error) {
-    console.log(error);
+  } catch (error: any) {
     throw error;
   }
 };
