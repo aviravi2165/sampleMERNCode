@@ -10,4 +10,4 @@ FROM node:21-slim
 WORKDIR /usr/src/app
 COPY --from=frontend-builder /usr/src/app .
 EXPOSE 3000
-CMD ["npm","start"]
+CMD ["npm","start","--","--host"]
