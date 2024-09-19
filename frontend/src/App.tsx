@@ -8,7 +8,7 @@ const App: React.FC = () => {
     setShowMessage(false);
   };
   const fetchMessage = async () => {
-    const response = await fetch("http://localhost:8080");
+    const response = await fetch("http://localhost:8888");
     const fetchedData = await response.json();
     setShowMessage(true);
     setMessage(fetchedData.message);
