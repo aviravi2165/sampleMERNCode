@@ -4,6 +4,7 @@ WORKDIR /usr/src/app
 COPY package*.json ./
 RUN npm install -g pnpm && pnpm install
 COPY . .
+RUN npm run test
 
 #Stage2
 FROM node:21-slim
